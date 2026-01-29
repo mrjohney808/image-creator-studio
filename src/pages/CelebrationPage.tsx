@@ -51,7 +51,7 @@ const CelebrationPage = () => {
       {/* Footer */}
       <footer className="pb-8 text-center">
         <p className="text-cream-muted/60 text-xs tracking-[0.3em] font-body uppercase">
-          Mahadsanid Gacaliye
+          Mahad sanid gacaliso
         </p>
       </footer>
     </div>
