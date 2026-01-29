@@ -76,7 +76,7 @@ const AnniversaryPage = ({
 
         {/* CTA Button */}
         <div className="animate-fade-in" style={{ animationDelay: '0.7s' }}>
-          <RomanticButton>
+          <RomanticButton onClick={onBack}>
             Waan ku jeclahay
           </RomanticButton>
         </div>
