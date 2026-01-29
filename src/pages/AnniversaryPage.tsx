@@ -3,6 +3,7 @@ import DecorativeDots from '@/components/DecorativeDots';
 import GlowCard from '@/components/GlowCard';
 import HeartIcon from '@/components/HeartIcon';
 import RomanticButton from '@/components/RomanticButton';
+import loveLetterImage from '@/assets/love-letter.png';
 
 interface AnniversaryPageProps {
   onBack?: () => void;
@@ -37,7 +38,13 @@ const AnniversaryPage = ({
       <main className="flex-1 flex flex-col items-center px-6 pt-4 pb-8">
         {/* Glow Card */}
         <div className="w-full max-w-sm mb-8 animate-scale-in">
-          <GlowCard className="h-48" />
+          <GlowCard className="h-48 flex items-center justify-center">
+            <img 
+              src={loveLetterImage} 
+              alt="Love letter" 
+              className="w-24 h-24 object-contain animate-float"
+            />
+          </GlowCard>
         </div>
 
         {/* Message section */}

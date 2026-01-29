@@ -20,14 +20,17 @@ const GlowCard = ({ children, className = '' }: GlowCardProps) => {
       {/* Card */}
       <div className="relative bg-gradient-card rounded-3xl p-8 border border-border/30">
         {/* Sparkle decorations */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div className="absolute top-6 left-1/2 -translate-x-1/2">
           <div className="flex items-center gap-2">
             <SparkleIcon size={20} className="text-primary animate-sparkle" style={{ animationDelay: '0s' }} />
             <SparkleIcon size={32} className="text-primary animate-sparkle" style={{ animationDelay: '0.3s' }} />
             <SparkleIcon size={20} className="text-primary animate-sparkle" style={{ animationDelay: '0.6s' }} />
           </div>
         </div>
-        {children}
+        {/* Children content */}
+        <div className="relative z-10 pt-8">
+          {children}
+        </div>
       </div>
     </div>
   );
