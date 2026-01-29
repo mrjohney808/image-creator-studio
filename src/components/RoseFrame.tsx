@@ -1,4 +1,4 @@
-import roseImage from '@/assets/rose.png';
+import coupleImage from '@/assets/couple.png';
 
 interface RoseFrameProps {
   className?: string;
@@ -15,9 +15,9 @@ const RoseFrame = ({ className = '' }: RoseFrameProps) => {
         {/* Inner container */}
         <div className="w-full h-full rounded-full overflow-hidden bg-gradient-card">
           <img
-            src={roseImage}
-            alt="Beautiful rose"
-            className="w-full h-full object-cover animate-float"
+            src={coupleImage}
+            alt="Couple photo"
+            className="w-full h-full object-cover"
           />
         </div>
       </div>
